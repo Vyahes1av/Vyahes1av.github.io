@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+.intro {
+    
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+    
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+	--text: #e7e7e0;
+	--transition: transform .60s cubic-bezier(.075, .10, 0, 1);
+}
+
+body {
+	background-color: #000000;
+	font-family: raleway_f, sc;
+	line-height: 1.0;
+	background-color:rgb(7, 7, 6);
+}
+.main-header {
+	position: relative;
+}
+.layers {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+.layers__title {
+	font-size: calc(var(--index) * 2.25);
+	letter-spacing: calc(var(--index) / 2.25);
+}
+.layer__header {
+	text-transform: uppercase;
+	font-weight: 900;
+	color: var(--text);
+	text-shadow: 0 0 15px #7dd6ef;
+}
+
+.layers__caption {
+	font-size: calc(var(--index) / 1.175);
+	letter-spacing: calc(var(--index) / 5.5);
+	margin-top: calc(var(--index) * 1.85);
+}
+.main-article {
+	
+	background-size: cover;
+	background-position: center;
+	color: var(--text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	text-align: center;
+	/* Update: */
+	top: 10px;
+	z-index: 100;
+}
+
+.main-article__paragraph {
+	max-width: calc(var(--index) * 30);
+	font-size: calc(var(--index) * 1.05);
+	margin-top: calc(var(--index) / 1.25);
+	transform: var(--main-article-transform);
+	transition: var(--transition);
+	will-change: transform;
+}
+.hero_link {
+	text-decoration-line: none;
+	text-align: center;
+	margin-right: 50px;   /* уменьшили расстояние друг от друга */
+	font-size: 30px;
+	color: rgb(252, 255, 255);
+	transition: color 0.3s;
+	font-style: normal;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero_link:hover {
+	color: #1b7bcf;
+}
+
+.copy {
+	position: absolute;
+	bottom: calc(var(--index) * 2.5);
+	opacity: .45;
+	font-size: calc(var(--index) * .75);
+	letter-spacing: calc(var(--index) / 37.5);
+}
+
+.copy {
+	bottom: calc(var(--index) * 2);
+	font-size: calc(var(--index) * 0.7);
+	letter-spacing: calc(var(--index) / 50);
+	text-align: center; /* Центрирование текста по горизонтали */
+}
+.wrapper {
+		
+	height: 250px;
+	width: 250px;
+	border-radius: 80%;
+	overflow: hidden;
+	border: 2px solid #0a0a0a;
+	margin: 50px 0 0 0;
+}
+.wrapper img {
+	   
+	
+	height: 100%;
+	width: 100%;
+	background-image:url(../img.jpg);
+	border-radius: 80%;
+	filter: grayscale(100%);
+	transition: 0.5s ease;
+	cursor: pointer;	
+}
+.wrapper img:hover {
+	transform: scale(1.3);
+	filter: grayscale(0%);
+}
+	
